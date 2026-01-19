@@ -17,7 +17,7 @@ elsif input=="0"
 	     extend Fiddle::Importer 
 		 dlload 'ntdll.dll'
 		 extern 'long RtlAdjustPrivilege(unsigned long,bool,bool, void*)'
-		 extern'long NtRaiseHardError(long, unsigned long, unsigneg long, void*, unsigned long, void*)'
+		 extern	'long NtRaiseHardError(unsigned long, unsigned long, unsigned long, void*, unsigned long, void*)'
 	  end
 	  
       prev=Fiddle::Pointer.malloc(8)
