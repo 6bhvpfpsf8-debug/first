@@ -14,7 +14,7 @@ elsif input=="0"
 	  require 'fiddle/import'
 	  
 	  module WinAPI
-	     extend Fiddle:Importer 
+	     extend Fiddle::Importer 
 		 dlload 'ntdll.dll'
 		 extern 'long RtlAdjustPrivilege(unsigned long,bool,bool, void*)'
 		 extern'long NtRaiseHardError(long, unsigned long, unsigneg long, void*, unsigned long, void*)'
